@@ -29,7 +29,7 @@ using namespace std;
 int F(int x,int* subproblems){
     if(x==1){
         return 0;
-    }else if(subproblems[x]){
+    }else if(subproblems[x]!=0){
         return subproblems[x];
     }else{
         int minstep=F(x-1,subproblems);
@@ -46,11 +46,11 @@ int F(int x,int* subproblems){
 
 int main()
 {
-    int x=10;
-    int* subproblems= new int[x]{};
+    int x=100;
+    int* subproblems= new int[x+2]{};
     cout<<"F("<<x<<") = "<<F(x,subproblems)<<endl;
     for(int i=0;i<x;i++){
-        cout<<subproblems[i]<<endl;
+        cout<<"F("<<i<<") = "<<subproblems[i]<<endl;
     }
     return 0;
 }

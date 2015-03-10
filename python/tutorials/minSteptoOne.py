@@ -18,12 +18,18 @@ def F(x):
     elif x in subproblems: 
         return subproblems[x]
     else:
-        choice=[F(x-1)]
+        choices=[F(x-1)]
+        path=["(-1)"]
         if x%2==0: 
-            choice.append(F(x//2))
+            choices.append(F(x//2))
+            path.append("(/2)")
         if x%3==0: 
-            choice.append(F(x//3))
-        subproblems[x]=1+min(choice)
+            choices.append(F(x//3))
+            path.append("(/3)")
+        minchoice=min(choices)
+        subproblems[x]=1+minchoice
+        
+        print "-->",x,path[choices.index(minchoice)]
         return subproblems[x]
         
 
