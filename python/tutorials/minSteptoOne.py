@@ -28,4 +28,4 @@ def F(x):
         
 
 if __name__ == "__main__":
-    print F(10)
+    print F(100)
