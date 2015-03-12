@@ -11,6 +11,8 @@ Created on Tue Mar 10 08:58:45 2015
 #F(n)=1+min([])
 
 #Using Memorization
+import sys
+sys.setrecursionlimit(10000)
 subproblems={}
 def F(x):
     if x==1: 
@@ -34,4 +36,4 @@ def F(x):
         
 
 if __name__ == "__main__":
-    print F(100)
+    print F(7566)

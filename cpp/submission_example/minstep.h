@@ -1,9 +1,9 @@
 #ifndef MINSTEP
 #define MINSTEP
 
-int notthing(){
-    return 0;
-}
+//int notthing(){
+//    return 0;
+//}
 
 #endif // MINSTEP
 

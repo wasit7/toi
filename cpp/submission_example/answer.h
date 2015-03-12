@@ -21,12 +21,12 @@ int F(int x,int* subproblems){
     }
 }
 
-int answer_main(int x){
+int student_function(int x){
     int* subproblems= new int[x+2]{};
     int final_answer=F(x,subproblems);
-    cout<<"F("<<x<<") = "<< final_answer <<endl;
-    for(int i=0;i<x;i++){
-        cout<<"F("<<i<<") = "<<subproblems[i]<<endl;
-    }
+//    cout<<"F("<<x<<") = "<< final_answer <<endl;
+//    for(int i=0;i<x;i++){
+//        cout<<"F("<<i<<") = "<<subproblems[i]<<endl;
+//    }
     return final_answer;
 }
