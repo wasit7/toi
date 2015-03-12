@@ -1,0 +1,14 @@
+debug input:/home/ubuntu/toi/2015/_questions/minstep/file_in.txt
+debug output:/home/ubuntu/toi/2015/_questions/minstep/file_out.txt
+x:10 y[x]:3 f(x):3
+x:20 y[x]:4 f(x):4
+x:30 y[x]:4 f(x):4
+x:40 y[x]:5 f(x):5
+x:50 y[x]:6 f(x):6
+x:100 y[x]:7 f(x):7
+x:756 y[x]:7 f(x):7
+x:1743 y[x]:11 f(x):11
+x:2263 y[x]:13 f(x):13
+x:5617 y[x]:12 f(x):12
+closing files
+FINISHED CPU 0.00 MEM 0 MAXMEM -1 STALE 0

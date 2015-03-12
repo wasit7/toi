@@ -5,6 +5,7 @@ import datetime
 
 question_name="minstep"
 submission_name="submission.h"
+constrain=" -m 32000 -t 1 "
 home_dir="/home"
 work_dir="/home/ubuntu/toi/2015"
 ms_dir="/home/ubuntu/toi/2015/_questions"
@@ -45,7 +46,7 @@ for root, dirs, files in os.walk(home_dir):
                             ms_file_path=os.path.join(ms_dir,question_name,"file_out.txt") 
                             #student result
                             out_log_file=os.path.join(dst_dir,"out_%s"%(datetime.datetime.now().strftime("%d_%H%M%S")))
-                            the_cmd= out_path + " " + in_file_path + " " + ms_file_path + "> %s 2>&1"%out_log_file
+                            the_cmd=  os.path.join(work_dir,"_src/timeout.sh")+constrain+ out_path + " " + in_file_path + " " + ms_file_path + "> %s 2>&1"%out_log_file
                             print "runing:",the_cmd
                             os.system(the_cmd)
 
