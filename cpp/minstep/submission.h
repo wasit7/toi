@@ -21,7 +21,7 @@ int F(int x,int* subproblems){
     }
 }
 
-int student_function(int x){
+int student_minstep(int x){
     int* subproblems= new int[x+2]{};
     int final_answer=F(x,subproblems);
 //    cout<<"F("<<x<<") = "<< final_answer <<endl;

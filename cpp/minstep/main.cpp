@@ -1,12 +1,13 @@
-#include "answer.h"
+
 #include <iostream>
 #include <fstream>
+#include "submission.h"
 using namespace std;
-int main(int arc, char **argv)
-{
-    //argv[0] executed file
-    //argv[1] input file
-    //argv[2] output file
+int main(int arc, char **argv){
+//    argv[0] executed file
+//    argv[1] input file
+//    argv[2] output file
+
     ifstream in_file(argv[1]);
     ifstream out_file(argv[2]);
     cout<<"debug input:"<<argv[1]<<endl;
@@ -18,7 +19,7 @@ int main(int arc, char **argv)
             in_file >> x[i];
             out_file >>y[i];
             cout<<"x:"<<x[i]<<" y[x]:"<<y[i];
-            cout<<" f(x):"<<student_function(x[i])<<endl;
+            cout<<" f(x):"<<student_minstep(x[i])<<endl;
         }
         cout<<"closing files"<<endl;
         in_file.close();

@@ -29,3 +29,4 @@ int student_minstep(int x){
 //        cout<<"F("<<i<<") = "<<subproblems[i]<<endl;
 //    }
     return final_answer;
+}

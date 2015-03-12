@@ -1,12 +1,13 @@
-#include "submission.h"
+
 #include <iostream>
 #include <fstream>
+#include "submission.h"
 using namespace std;
-int main(int arc, char **argv)
-{
-    //argv[0] executed file
-    //argv[1] input file
-    //argv[2] output file
+int main(int arc, char **argv){
+//    argv[0] executed file
+//    argv[1] input file
+//    argv[2] output file
+
     ifstream in_file(argv[1]);
     ifstream out_file(argv[2]);
     cout<<"debug input:"<<argv[1]<<endl;
