@@ -6,8 +6,8 @@ import datetime
 question_name="question1"
 submission_name="submission.h"
 home_dir="/home"
-work_dir="/home/ubuntu/2015"
-ms_dir="/home/ubuntu/2015/_ms"
+work_dir="/home/ubuntu/toi/2015"
+ms_dir="/home/ubuntu/toi/2015/_questions"
 for root, dirs, files in os.walk(home_dir):
     if root == home_dir:
         for user_dir in dirs:

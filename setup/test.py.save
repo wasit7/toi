@@ -1,0 +1,9 @@
+import os
+question_name="question1"
+submission="submission.h"
+for root, dirs, files in os.walk("/home"):
+    if root == "/home":
+        for q_dir in dirs:
+    	    if q_dir != "ubuntu":
+                print 'user dir:',user_dir
+    	        print files
