@@ -9,5 +9,6 @@ include(deployment.pri)
 qtcAddDeployment()
 
 HEADERS += \
-    minstep.h
+    minstep.h \
+    answer.h
 

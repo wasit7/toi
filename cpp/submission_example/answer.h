@@ -1,7 +1,7 @@
+#include "minstep.h"
 #include <iostream>
 #include <algorithm>
 using namespace std;
-
 
 int F(int x,int* subproblems){
     if(x==1){
@@ -20,19 +20,13 @@ int F(int x,int* subproblems){
         return subproblems[x];
     }
 }
-int minStep(int x){
+
+int answer_main(int x){
     int* subproblems= new int[x+2]{};
-    return F(x,subproblems);
-//    cout<<"F("<<x<<") = "<<F(x,subproblems)<<endl;
-//    for(int i=0;i<x;i++){
-//        cout<<"F("<<i<<") = "<<subproblems[i]<<endl;
-//    }
+    int final_answer=F(x,subproblems);
+    cout<<"F("<<x<<") = "<< final_answer <<endl;
+    for(int i=0;i<x;i++){
+        cout<<"F("<<i<<") = "<<subproblems[i]<<endl;
+    }
+    return final_answer;
 }
-
-int main()
-{
-    int x=10;
-    cout<<"the minimum number of steps from "<<x<<" to one is "<< minStep(x)<<endl;
-    return 0;
-}
-

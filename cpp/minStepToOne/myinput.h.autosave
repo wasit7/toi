@@ -1,0 +1,8 @@
+#ifndef MYINPUT
+#define MYINPUT
+int test(){
+    
+}
+
+#endif // MYINPUT
+
