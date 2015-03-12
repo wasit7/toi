@@ -31,13 +31,21 @@ for root, dirs, files in os.walk(home_dir):
                             support_path=os.path.join(ms_dir,question_name)
                             cpp_path=os.path.join(ms_dir,question_name,"main.cpp")
                             out_path=os.path.join(dst_dir,"main.out")
-                            log_path=os.path.join(dst_dir,"log%s"%(datetime.datetime.now().strftime("%y%m%d_%H%M%S")))
+                            log_path=os.path.join(dst_dir,"log_%s"%(datetime.datetime.now().strftime("%d_%H%M%S")))
                             print "compiling: support:",support_path
                             print "          cpp_path:",cpp_path
-                            the_cmd="g++ -Wall -I %s -I %s -o %s %s > %s 2>&1"%(dst_dir,support_path,out_path,cpp_path,log_path)
-                            print the_cmd
+                            the_cmd="g++ -std=c++11 -Wall -I %s -I %s -o %s %s > %s 2>&1"%(dst_dir,support_path,out_path,cpp_path,log_path)
+                            #print the_cmd
                             os.system(the_cmd)
 
                             ## run
-                            the_cmd="out_path" + " file_in.txt file_out.txt"
-                            print the_cmd
+                            #input question
+                            in_file_path=os.path.join(ms_dir,question_name,"file_in.txt") 
+                            #markschem
+                            ms_file_path=os.path.join(ms_dir,question_name,"file_out.txt") 
+                            #student result
+                            out_log_file=os.path.join(dst_dir,"out_%s"%(datetime.datetime.now().strftime("%d_%H%M%S")))
+                            the_cmd= out_path + " " + in_file_path + " " + ms_file_path + "> %s 2>&1"%out_log_file
+                            print "runing:",the_cmd
+                            os.system(the_cmd)
+
