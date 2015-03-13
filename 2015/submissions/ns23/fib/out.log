@@ -1,3 +1,3 @@
 debug input: /home/ubuntu/toi/2015/_questions/fib/file_in.txt
 debug output: /home/ubuntu/toi/2015/_questions/fib/file_out.txt
-HANGUP CPU 0.00 MEM 13320 MAXMEM 13320 STALE 6
+HANGUP CPU 0.00 MEM 13324 MAXMEM 13324 STALE 4
