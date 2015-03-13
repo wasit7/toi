@@ -1,0 +1,8 @@
+In file included from /home/ubuntu/toi/2015/_questions/fib/main.cpp:4:0:
+/home/ubuntu/toi/2015/submissions/cp16/fib/submission.h: In function ‘long long unsigned int fib(int)’:
+/home/ubuntu/toi/2015/submissions/cp16/fib/submission.h:5:10: error: expected ‘(’ before ‘if’
+          if(x==1)return 1;
+          ^
+/home/ubuntu/toi/2015/submissions/cp16/fib/submission.h:6:10: error: ‘else’ without a previous ‘if’
+          else
+          ^

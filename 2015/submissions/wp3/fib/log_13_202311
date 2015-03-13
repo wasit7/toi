@@ -1,0 +1,8 @@
+In file included from /home/ubuntu/toi/2015/_questions/fib/main.cpp:4:0:
+/home/ubuntu/toi/2015/submissions/wp3/fib/submission.h: In function ‘long long unsigned int fib(int)’:
+/home/ubuntu/toi/2015/submissions/wp3/fib/submission.h:10:16: error: ‘f’ was not declared in this scope
+     dy[a]=f(a-1)+f(a-2);
+                ^
+/home/ubuntu/toi/2015/submissions/wp3/fib/submission.h:12:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^

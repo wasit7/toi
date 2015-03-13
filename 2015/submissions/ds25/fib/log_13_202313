@@ -1,0 +1,5 @@
+In file included from /home/ubuntu/toi/2015/_questions/fib/main.cpp:4:0:
+/home/ubuntu/toi/2015/submissions/ds25/fib/submission.h: In function ‘long long unsigned int fib(int)’:
+/home/ubuntu/toi/2015/submissions/ds25/fib/submission.h:2:18: error: declaration of ‘int n’ shadows a parameter
+     int a[10000],n,i;
+                  ^

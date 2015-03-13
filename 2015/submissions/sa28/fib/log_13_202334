@@ -1,0 +1,5 @@
+In file included from /home/ubuntu/toi/2015/_questions/fib/main.cpp:4:0:
+/home/ubuntu/toi/2015/submissions/sa28/fib/submission.h: In function ‘long long unsigned int fib(int)’:
+/home/ubuntu/toi/2015/submissions/sa28/fib/submission.h:9:20: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for(tn=1;tn<=n;tn++)
+                    ^

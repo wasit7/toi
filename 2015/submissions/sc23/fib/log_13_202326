@@ -1,0 +1,11 @@
+In file included from /home/ubuntu/toi/2015/_questions/fib/main.cpp:4:0:
+/home/ubuntu/toi/2015/submissions/sc23/fib/submission.h: In function ‘long long unsigned int fib(int)’:
+/home/ubuntu/toi/2015/submissions/sc23/fib/submission.h:3:2: error: expected ‘,’ or ‘;’ before ‘for’
+  for(int i=2;i<=x;i++){
+  ^
+/home/ubuntu/toi/2015/submissions/sc23/fib/submission.h:3:14: error: ‘i’ was not declared in this scope
+  for(int i=2;i<=x;i++){
+              ^
+/home/ubuntu/toi/2015/submissions/sc23/fib/submission.h:3:22: error: expected ‘;’ before ‘)’ token
+  for(int i=2;i<=x;i++){
+                      ^

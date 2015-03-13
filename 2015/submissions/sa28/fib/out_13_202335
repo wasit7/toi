@@ -1,0 +1,14 @@
+debug input: /home/ubuntu/toi/2015/_questions/fib/file_in.txt
+debug output: /home/ubuntu/toi/2015/_questions/fib/file_out.txt
+x:3 y[x]:2 f(x):5
+x:5 y[x]:5 f(x):13
+x:7 y[x]:13 f(x):34
+x:11 y[x]:89 f(x):233
+x:13 y[x]:233 f(x):610
+x:17 y[x]:1597 f(x):4181
+x:19 y[x]:4181 f(x):10946
+x:23 y[x]:28657 f(x):75025
+x:29 y[x]:514229 f(x):1346269
+x:41 y[x]:165580141 f(x):433494437
+closing files
+FINISHED CPU 0.00 MEM 0 MAXMEM -1 STALE 0
