@@ -1,0 +1,4 @@
+/home/ubuntu/toi/2015/_questions/fib/main.cpp: In function ‘int main(int, char**)’:
+/home/ubuntu/toi/2015/_questions/fib/main.cpp:22:37: error: ‘fib’ was not declared in this scope
+             cout<<" f(x):"<<fib(x[i])<<endl;
+                                     ^

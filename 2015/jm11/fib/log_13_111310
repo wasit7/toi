@@ -1,0 +1,15 @@
+In file included from /home/ubuntu/toi/2015/_questions/fib/main.cpp:4:0:
+/home/ubuntu/toi/2015/jm11/fib/submission.h:12:6: warning: ISO C++ forbids declaration of ‘main’ with no type [-Wreturn-type]
+ main()
+      ^
+/home/ubuntu/toi/2015/_questions/fib/main.cpp: In function ‘int main(int, char**)’:
+/home/ubuntu/toi/2015/_questions/fib/main.cpp:6:30: error: declaration of C function ‘int main(int, char**)’ conflicts with
+ int main(int arc, char **argv){
+                              ^
+In file included from /home/ubuntu/toi/2015/_questions/fib/main.cpp:4:0:
+/home/ubuntu/toi/2015/jm11/fib/submission.h:12:1: error: previous declaration ‘int main()’ here
+ main()
+ ^
+/home/ubuntu/toi/2015/_questions/fib/main.cpp:22:37: error: ‘fib’ was not declared in this scope
+             cout<<" f(x):"<<fib(x[i])<<endl;
+                                     ^
