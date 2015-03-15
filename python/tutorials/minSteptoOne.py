@@ -36,4 +36,4 @@ def F(x):
         
 
 if __name__ == "__main__":
-    print F(7566)
+    print F(20)
