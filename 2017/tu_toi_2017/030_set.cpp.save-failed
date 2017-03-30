@@ -1,0 +1,30 @@
+#include <iostream>
+#include <set>
+#include <algorithm>
+using namespace std;
+int main(){
+    set<int> myset;
+    myset.insert(3); //{3}, O(log(n))
+    myset.insert(5); //{5}
+    myset.insert(1); //{1}
+
+    //find
+    auto it =myset.find(5);//O(log(n))
+    if( it!=myset.end() ){
+        cout<< "found 5!\n";
+    }
+
+    //inset
+    pair< set<int>::iterator, bool> a;
+    a = myset.insert(5);
+    if(a.second){
+        cout<<"successful insertion"<<endl;
+    }else{
+        cout<<"fail to insert 5"<<endl;
+    }
+
+    it=a.first;
+    cout<< *it <<endl; //5
+
+    myset.
+}
