@@ -5,7 +5,9 @@ using namespace std;
 int main(){
     freopen ("01.in","r",stdin);
     freopen ("01.out","w",stdout);
-
+    //when the input is large, enable the 2 following lines
+    //ios_base::sync_with_stdio(false);
+    //cin.tie(NULL);`
     int cmax, sum=0;
     cin >> cmax;
     int A[cmax];
